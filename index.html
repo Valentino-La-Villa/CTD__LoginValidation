@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+
+    <form id="loginForm" novalidate>
+        
+        <label for="email">Correo electrónico: </label>
+        <div>
+            <div class="inputGroup">
+                <input type="email" name="email" id="email" required>
+                <span style="visibility: hidden;" id="show-hide"><img class="toggleVisibility" src="./assets/visible-icon.png" alt=""></span>
+            </div>
+            <p id="emailError" class="error"></p>
+        </div>
+
+        <label for="password">Contraseña: </label>
+        <div>
+            <div class="inputGroup">
+                <input type="password" name="password" id="password" required autocomplete="off">
+                <span id="show-hide"><img id="toggleVisibility" src="./assets/visible-icon.png" alt=""></span>
+            </div>
+            <p id="passwordError" class="error"></p>
+        </div>
+
+    
+        <label for="confirmPassword">Confirme su contraseña: </label>
+        <div>
+            <div class="inputGroup">
+                <input type="password" name="confirmPassword" id="confirmPassword" required autocomplete="off">
+                <span style="visibility: hidden;" id="show-hide"><img class="toggleVisibility" src="./assets/visible-icon.png" alt=""></span>
+            </div>
+            <p id="confirmPasswordError" class="error"></p>
+        </div>
+
+        <input type="submit" value="Login">
+    </form>
+
+</body>
+    <script src="./script.js"></script>
+</html>

@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: lightblue;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    justify-content: center;
+    padding: 40px;
+}
+
+#loginForm {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px black;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    padding: 30px 50px 50px 50px;
+    width: 40%;
+}
+
+#loginForm > div {
+    margin: 5px 0 30px 0;
+    width: 100%;
+}
+
+#loginForm .inputGroup {
+    display: flex;
+    width: 100%;
+}
+
+#loginForm > div span {
+    margin-left: 10px;
+}
+
+#loginForm > div span:hover {
+    cursor: pointer;
+}
+
+#loginForm > div input {
+    height: 2rem;
+    width: 100%;
+}
+
+#loginForm > input[type="submit"] {
+    background-color: rgb(93, 93, 212);
+    border-radius: 7px;
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    height: 3rem;
+    transition: background-color 0.3s;
+}
+
+#loginForm > input[type="submit"]:hover {
+    background-color: rgb(62, 62, 197);
+    cursor: pointer;
+}
+
+.error {
+    color: red;
+    display: none;
+    font-size: 0.75rem;
+    padding-top: 7px;
+}
+
+#show-hide {
+    transition: transform 0.3s;
+    float: right;
+}
+
+#show-hide:hover {
+    transform: scale(110%);
+}
